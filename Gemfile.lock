@@ -72,6 +72,7 @@ GEM
     autoprefixer-rails (10.4.13.0)
       execjs (~> 2)
     base64 (0.1.1)
+    bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -207,7 +208,7 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails-i18n (7.0.7)
+    rails-i18n (7.0.8)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
     railties (7.0.7)
@@ -297,6 +298,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (= 3.1.13)
   bootsnap
   bootstrap-sass (= 3.4.1)
   capybara
