@@ -63,3 +63,16 @@ en:
     new:
       title: *sign_up
       description: "This will be a signup page for new users."
+      submit: "Create my account"
+      name: "Name"
+      password: "Password"
+      confirmation: "Confirmation"
+    create:
+      success: "Welcome to Sample App!"
+      failed: "Have some errors occur"
+    show:
+      user_not_found: "User not found!"
+  shared:
+    error_messages:
+      error_total: The form contains
+      error: "error"
