@@ -1,0 +1,65 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   "true": "foo"
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+vi:
+  static_pages:
+    about:
+      title: &about "Về chúng tôi"
+      description: <a href="https://www.railstutorial.org/"><em>Ruby on Rails Tutorial</em></a>, 1 phần của <a href="https://www.learnenough.com/">Learn Enough</a> trong chuỗi khóa học, là <a href="https://www.railstutorial.org/book">sách</a> và <a href="https://screencasts.railstutorial.org/">chuỗi video</a> hướng dẫn phát triển web với <a href="https://rubyonrails.org/">Ruby on Rails</a>. Đây là ứng dụng mẫu cho hướng dẫn.
+    contact:
+      title: &contact "Liên hệ"
+      description: Liên hệ với Ruby on Rails Tutorial về sample app <a href="https://www.railstutorial.org/contact">trang liên hệ</a>.
+    help:
+      title: &help "Trợ giúp"
+      description: Nhận trợ giúp về Ruby on Rails Tutorial at the <a href="https://www.railstutorial.org/help">Trang trợ giúp Rails Tutorial</a>. Để được trợ giúp về ứng dụng mẫu này, hãy xem <a href="https://www.railstutorial.org/book"> sách <em>Ruby on Rails Tutorial</em></a>.
+    home:
+      home: &home "Trang chủ"
+      title: "Chào mừng đến với sample app"
+      description: Đây là trang chủ của dự án mẫu sử dụng <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>.
+      sign_up: &sign_up "Đăng ký ngay"
+  layouts:
+    application:
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+    header:
+      title: "Ruby on Rails Tutorial Sample App"
+      help: *help
+      home: *home
+      login: "Đăng nhập"
+    footer:
+      description: <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> tạo bởi <a href="https://www.michaelhartl.com/">Michael Hartl</a>
+      about: *about
+      contact: *contact
+      news: "Tin tức"
+  users:
+    new:
+      title: *sign_up
+      description: "Đăng ký cho người dùng mới."
+
