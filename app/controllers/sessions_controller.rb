@@ -1,18 +1,17 @@
 class SessionsController < ApplicationController
   before_action :find_user, only: %i(create)
-  def new
-    # debugger
-  end
+  def new; end
 
   def create
     if @user.authenticate params.dig(:session, :password)
+      forwarding_url = session[:forwarding_url]
       reset_session
       params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
       log_in @user
-      redirect_to @user
+      redirect_to forwarding_url || @user
     else
       flash.now[:danger] = t ".invalid_login"
-      render "new", status: :unprocessable_entity
+      render :new, status: :unprocessable_entity
     end
   end
 
