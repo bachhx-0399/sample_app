@@ -87,5 +87,5 @@ en:
       password: "Password"
       form_submit: "Sign up now!"
       new_user?: "New user?"
-    create:
-      invalid_login: "Invalid email/password combination"
+      remember_text: "Remember me on this computer"
+    invalid_login: "Invalid email/password combination"
