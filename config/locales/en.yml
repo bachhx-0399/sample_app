@@ -68,15 +68,30 @@ en:
     new:
       title: *sign_up
       description: "This will be a signup page for new users."
-      submit: "Create my account"
-      name: "Name"
-      password: "Password"
-      confirmation: "Confirmation"
+      form_button: "Create my account"
     create:
       success: "Welcome to Sample App!"
       failed: "Have some errors occur"
-    show:
-      user_not_found: "User not found!"
+    user_not_found: "User not found!"
+    edit:
+      title: "Edit user"
+      h1_tag: "Update your profile"
+      form_button: "Save changes"
+      change: "Change"
+    form:
+      name: "Name"
+      password: "Password"
+      confirmation: "Confirmation"
+    update:
+      update_success: "Profile updated"
+    index:
+      title: "All users"
+    destroy:
+      destroy_success: "User deleted"
+      destroy_danger: "User is not destroy"
+    user:
+      delete_confirm: "You sure?"
+      delete: "delete"
   shared:
     error_messages:
       error_total: The form contains
@@ -89,3 +104,17 @@ en:
       new_user?: "New user?"
       remember_text: "Remember me on this computer"
     invalid_login: "Invalid email/password combination"
+  pagy:
+    item_name:
+      one: "item"
+      other: "items"
+    nav:
+      prev: "&lsaquo;&nbsp;Prev"
+      next: "Next&nbsp;&rsaquo;"
+      gap: "&hellip;"
+    info:
+      no_items: "No %{item_name} found"
+      single_page: "Displaying <b>%{count}</b> %{item_name}"
+      multiple_pages: "Displaying %{item_name} <b>%{from}-%{to}</b> of <b>%{count}</b> in total"
+    combo_nav_js: "<label>Page %{page_input} of %{pages}</label>"
+    items_selector_js: "<label>Show %{items_input} %{item_name} per page</label>"

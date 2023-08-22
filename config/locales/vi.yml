@@ -67,15 +67,30 @@ vi:
     new:
       title: *sign_up
       description: "Đăng ký cho người dùng mới."
-      submit: "Tạo tài khoản của tôi"
-      name: "Tên"
-      password: "Mật khẩu"
-      confirmation: "Xác nhận"
+      form_button: "Tạo tài khoản của tôi"
     create:
       success: "Chào mừng đến với Sample App!"
       failed: "Có một số lỗi xảy ra"
-    show:
-      user_not_found: "Người dùng không tồn tại!"
+    user_not_found: "Người dùng không tồn tại!"
+    edit:
+      title: "Cập nhật người dùng"
+      h1_tag: "Cập nhật hồ sơ của bạn"
+      form_button: "Lưu thay đổi"
+      change: "Thay đổi"
+    form:
+      name: "Tên"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận"
+    update:
+      update_success: "Đã cập nhật hồ sơ"
+    index:
+      title: "Toàn bộ người dùng"
+    destroy:
+      destroy_success: "Đã xóa người dùng"
+      destroy_danger: "Người dùng không bị xóa"
+    user:
+      delete_confirm: "Bạn chắc chứ?"
+      delete: "xóa"
   shared:
     error_messages:
       error_total: Biểu mẫu chứa
@@ -88,3 +103,17 @@ vi:
       new_user?: "Người dùng mới?"
       remember_text: "Nhớ tôi trên máy tính này"
     invalid_login: "Kết hợp email/mật khẩu không chính xác"
+  pagy:
+    item_name:
+      one: "vật phẩm"
+      other: "các vật phẩm"
+    nav:
+      prev: "&lsaquo;&nbsp;Trước"
+      next: "Sau&nbsp;&rsaquo;"
+      gap: "&hellip;"
+    info:
+      no_items: "Không tìm thấy %{item_name}"
+      single_page: "Đang hiển thị <b>%{count}</b> %{item_name}"
+      multiple_pages: "Đang hiển thị %{item_name} <b>%{from}-%{to}</b> của <b>%{count}</b> trong tổng"
+    combo_nav_js: "Trang %{page_input} của %{pages}"
+    items_selector_js: "Hiện thị %{items_input} %{item_name} trên trang"
