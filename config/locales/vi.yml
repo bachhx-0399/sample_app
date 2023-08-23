@@ -45,6 +45,7 @@ vi:
       title: "Chào mừng đến với sample app"
       description: Đây là trang chủ của dự án mẫu sử dụng <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>.
       sign_up: &sign_up "Đăng ký ngay"
+      Micropost_Feed: "Các bài tương tác"
   layouts:
     application:
       english: "Tiếng Anh"
@@ -93,10 +94,18 @@ vi:
     user:
       delete_confirm: "Bạn chắc chứ?"
       delete: "xóa"
+    show:
+      Microposts: "Bài đăng nhỏ"
   shared:
     error_messages:
       error_total: Biểu mẫu chứa
       error: "lỗi"
+    micropost_form:
+      textarea_placeholder: "Soạn bài đăng mới..."
+      Post: "Đăng"
+    user_info:
+      micropost: "bài đăng"
+      view_my_profile: "xem hồ sơ của tôi"
   sessions:
     new:
       login: "Đăng nhập"
@@ -122,12 +131,12 @@ vi:
       multiple_pages: "Đang hiển thị %{item_name} <b>%{from}-%{to}</b> của <b>%{count}</b> trong tổng"
     combo_nav_js: "Trang %{page_input} của %{pages}"
     items_selector_js: "Hiện thị %{items_input} %{item_name} trên trang"
-  description: "Chào mừng đến với Sample App!Ấn vào linh bên dưới để kích hoạt tài khoản của bạn:"
   user_mailer:
     account_activation:
       hi: "Chào"
       subject: "Kích hoạt tài khoản"
       active: "Kích hoạt"
+      description: "Chào mừng đến với Sample App!Ấn vào linh bên dưới để kích hoạt tài khoản của bạn:"
     password_reset:
       subject: "Đặt lại mật khẩu"
       title: "Nhấn vào link dưới để đặt lại mật khẩu:"
@@ -156,3 +165,19 @@ vi:
     flash_check_expiration_danger: "Đặt lại mật khẩu đã hết hạn."
     flash_get_user_danger: "Không tìm thấy người dùng!"
     flash_valid_user_danger: "Người dùng chưa được kích hoạt!"
+  microposts:
+    micropost:
+      Posted: "Được đăng"
+      ago: "trước"
+      delete: "xóa"
+      You_sure?: "Bạn chắc chứ?"
+    create:
+      flash_create_success: "Tạo bài đăng thành công!"
+    destroy:
+      flash_destroy_success: "Đã xóa bài đăng"
+      flash_destroy_danger: "Xóa thất bại"
+    flash_correct_user_danger: "Bài đăng không hợp lệ"
+  content_type_message: "phải là định dạng hình ảnh hợp lệ"
+  size_message: "phải nhỏ hơn 5 MB"
+  application:
+    flash_logged_in_user_danger: "Hãy đăng nhập trước đó"

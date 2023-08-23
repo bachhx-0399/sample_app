@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
 
   VALID_EMAIL_REGEX = Settings.email.regex
@@ -70,7 +71,7 @@ class User < ApplicationRecord
 
   # Sends activation email.
   def send_activation_email
-    UserMailer.account_activation(self).deliver_later
+    UserMailer.account_activation(self).deliver_now
   end
 
   # Sets the password reset attributes.
@@ -88,6 +89,12 @@ class User < ApplicationRecord
   # Returns true if a password reset has expired.
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
+  end
+
+  # Defines a proto-feed.
+  # See "Following users" for the full implementation.
+  def feed
+    microposts
   end
 
   private

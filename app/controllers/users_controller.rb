@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(show edit update)
   before_action :admin_user, only: :destroy
+
   def index
     @pagy, @users = pagy User.by_earliest_created,
                          items: Settings.digits.length_30
@@ -12,7 +13,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts,
+                              items: Settings.digits.length_30
+  end
 
   def create
     @user = User.new user_params

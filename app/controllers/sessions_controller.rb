@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
   before_action :find_user, only: :create
   before_action :authenticate_user, only: :create
+
   def new; end
 
   def create

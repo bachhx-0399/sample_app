@@ -4,11 +4,13 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem "active_storage_validations", "0.9.8"
 gem "bcrypt", "3.1.13"
 gem "bootstrap-sass", "3.4.1"
 gem "config"
 gem "faker", "2.21.0"
 gem "figaro", "~> 1.1", ">= 1.1.1"
+gem "image_processing", "1.12.2"
 gem "pagy", "3.3.1"
 gem "rails", "~> 7.0.5"
 gem "sassc-rails", "2.1.2"
@@ -24,10 +26,10 @@ gem "puma", "~> 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
-# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+# Hotwire"s SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
-# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+# Hotwire"s modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]

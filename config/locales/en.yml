@@ -45,6 +45,7 @@ en:
       title: "Welcome to the Sample App"
       description: This is the home page for the <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.
       sign_up: &sign_up "Sign up now!"
+      Micropost_Feed: "Micropost Feed"
   layouts:
     application:
       english: "English"
@@ -93,10 +94,18 @@ en:
     user:
       delete_confirm: "You sure?"
       delete: "delete"
+    show:
+      Microposts: "Microposts"
   shared:
     error_messages:
       error_total: The form contains
       error: "error"
+    micropost_form:
+      textarea_placeholder: "Compose new micropost..."
+      Post: "Post"
+    user_info:
+      micropost: "micropost"
+      view_my_profile: "view my profile"
   sessions:
     new:
       login: "Log in"
@@ -122,12 +131,12 @@ en:
       multiple_pages: "Displaying %{item_name} <b>%{from}-%{to}</b> of <b>%{count}</b> in total"
     combo_nav_js: "<label>Page %{page_input} of %{pages}</label>"
     items_selector_js: "<label>Show %{items_input} %{item_name} per page</label>"
-  description: "Welcome to the Sample App! Click on the link below to activate your account:"
   user_mailer:
     account_activation:
       hi: "Hi"
       subject: "Account activation"
       active: "Activate"
+      description: "Welcome to the Sample App! Click on the link below to activate your account:"
     password_reset:
       subject: "Password reset"
       title: "To reset your password click the link below:"
@@ -156,3 +165,19 @@ en:
     flash_check_expiration_danger: "Password reset has expired."
     flash_get_user_danger: "User not found!"
     flash_valid_user_danger: "User is in_actived!"
+  microposts:
+    micropost:
+      Posted: "Posted"
+      ago: "ago"
+      delete: "delete"
+      You_sure?: "You sure?"
+    create:
+      flash_create_success: "Micropost created!"
+    destroy:
+      flash_destroy_success: "Micropost deleted"
+      flash_destroy_danger: "Deleted fail"
+    flash_correct_user_danger: "Micropost invalid"
+  content_type_message: "must be a valid image format"
+  size_message: "should be less than 5MB"
+  application:
+    flash_logged_in_user_danger: "Please log in."

@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     resources :users
     resources :account_activations, only: :edit
     resources :password_resets, only: %i(new create edit update)
+    resources :microposts, only: %i(create destroy)
+    get "/microposts", to: "static_pages#home"
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
