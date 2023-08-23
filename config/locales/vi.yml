@@ -28,6 +28,7 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
+
 vi:
   static_pages:
     about:
@@ -71,6 +72,7 @@ vi:
     create:
       success: "Chào mừng đến với Sample App!"
       failed: "Có một số lỗi xảy ra"
+      create_info: "Kiểm tra email để kích hoạt tài khoản của bạn."
     user_not_found: "Người dùng không tồn tại!"
     edit:
       title: "Cập nhật người dùng"
@@ -103,6 +105,8 @@ vi:
       new_user?: "Người dùng mới?"
       remember_text: "Nhớ tôi trên máy tính này"
     invalid_login: "Kết hợp email/mật khẩu không chính xác"
+    create:
+      activated_false: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để kích hoạt link."
   pagy:
     item_name:
       one: "vật phẩm"
@@ -117,3 +121,13 @@ vi:
       multiple_pages: "Đang hiển thị %{item_name} <b>%{from}-%{to}</b> của <b>%{count}</b> trong tổng"
     combo_nav_js: "Trang %{page_input} của %{pages}"
     items_selector_js: "Hiện thị %{items_input} %{item_name} trên trang"
+  description: "Chào mừng đến với Sample App!Ấn vào linh bên dưới để kích hoạt tài khoản của bạn:"
+  user_mailer:
+    account_activation:
+      hi: "Chào"
+      subject: "Kích hoạt tài khoản"
+      active: "Kích hoạt"
+  account_activations:
+    edit:
+      edit_success: "Tài khoản đã được kích hoạt!"
+      edit_danger: "Link kích hoạt không hợp lệ"

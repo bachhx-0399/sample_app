@@ -3,3 +3,5 @@ digits:
   length_255: 255
   length_6: 6
   length_30: 30
+email:
+  regex: !ruby/regexp '/\A[\w+-.]+@[a-z\d-]+(.[a-z\d-]+)*.[a-z]+\z/i'

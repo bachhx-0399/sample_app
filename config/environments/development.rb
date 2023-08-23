@@ -69,4 +69,20 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   # Allow connections to local server.
   config.hosts.clear
+
+  host = "localhost:3000"
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = {host: host}
+
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    user_name: ENV["USER_EMAIL"],
+    password: ENV["USER_PASSWORD"],
+    address: "sandbox.smtp.mailtrap.io",
+    host: "sandbox.smtp.mailtrap.io",
+    port: 587,
+    authentication: "plain",
+    enable_starttls_auto: true
+  }
 end

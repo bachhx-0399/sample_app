@@ -72,6 +72,7 @@ en:
     create:
       success: "Welcome to Sample App!"
       failed: "Have some errors occur"
+      create_info: "Please check your email to activate your account."
     user_not_found: "User not found!"
     edit:
       title: "Edit user"
@@ -104,6 +105,8 @@ en:
       new_user?: "New user?"
       remember_text: "Remember me on this computer"
     invalid_login: "Invalid email/password combination"
+    create:
+      activated_false: "Account not activated. Check your email for the activation link."
   pagy:
     item_name:
       one: "item"
@@ -118,3 +121,13 @@ en:
       multiple_pages: "Displaying %{item_name} <b>%{from}-%{to}</b> of <b>%{count}</b> in total"
     combo_nav_js: "<label>Page %{page_input} of %{pages}</label>"
     items_selector_js: "<label>Show %{items_input} %{item_name} per page</label>"
+  description: "Welcome to the Sample App! Click on the link below to activate your account:"
+  user_mailer:
+    account_activation:
+      hi: "Hi"
+      subject: "Account activation"
+      active: "Activate"
+  account_activations:
+    edit:
+      edit_success: "Account activated!"
+      edit_danger: "Invalid activation link"
