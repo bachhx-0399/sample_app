@@ -104,6 +104,7 @@ vi:
       form_submit: "Đăng ký ngay!"
       new_user?: "Người dùng mới?"
       remember_text: "Nhớ tôi trên máy tính này"
+      forgot_password: "(quên mật khẩu)"
     invalid_login: "Kết hợp email/mật khẩu không chính xác"
     create:
       activated_false: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để kích hoạt link."
@@ -127,7 +128,31 @@ vi:
       hi: "Chào"
       subject: "Kích hoạt tài khoản"
       active: "Kích hoạt"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      title: "Nhấn vào link dưới để đặt lại mật khẩu:"
+      description: "Link này sẽ hết hạn trong 2 giờ. Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn vẫn sẽ giữ nguyên."
+      password_reset: "Đặt lại mật khẩu"
+      reset_password: "Đặt lại mật khẩu"
   account_activations:
     edit:
       edit_success: "Tài khoản đã được kích hoạt!"
       edit_danger: "Link kích hoạt không hợp lệ"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      submit: "Gửi"
+    edit:
+      title: "Đặt lại mật khẩu"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận"
+      submit: "Cập nhật mật khẩu"
+    create:
+      flash_info_create: "Đã gửi email hướng dẫn đặt lại mật khẩu"
+      flash_danger_create: "Không tìm thấy địa chỉ email"
+    update:
+      flash_update_success: "Mật khẩu đã được đặt lại."
+      empty_password_error: "không được để trống"
+    flash_check_expiration_danger: "Đặt lại mật khẩu đã hết hạn."
+    flash_get_user_danger: "Không tìm thấy người dùng!"
+    flash_valid_user_danger: "Người dùng chưa được kích hoạt!"
