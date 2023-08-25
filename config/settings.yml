@@ -8,3 +8,4 @@ email:
   regex: !ruby/regexp '/\A[\w+-.]+@[a-z\d-]+(.[a-z\d-]+)*.[a-z]+\z/i'
 model:
   image_type: <%= %w(image/jpeg image/gif image/png) %>
+  image_size_limit: [500, 500]

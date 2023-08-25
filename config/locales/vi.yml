@@ -96,6 +96,13 @@ vi:
       delete: "xóa"
     show:
       Microposts: "Bài đăng nhỏ"
+    unfollow:
+      Follow: "Theo dõi"
+    follow:
+      Unfollow: "Hủy theo dõi"
+    show_follow:
+      view_my_profile: "xem hồ sơ của tôi"
+      Microposts: "Bài đăng"
   shared:
     error_messages:
       error_total: Biểu mẫu chứa
@@ -106,6 +113,9 @@ vi:
     user_info:
       micropost: "bài đăng"
       view_my_profile: "xem hồ sơ của tôi"
+    stats:
+      following: "theo dõi"
+      followers: "người theo dõi"
   sessions:
     new:
       login: "Đăng nhập"
@@ -181,3 +191,15 @@ vi:
   size_message: "phải nhỏ hơn 5 MB"
   application:
     flash_logged_in_user_danger: "Hãy đăng nhập trước đó"
+  relationships:
+    create:
+      user_not_found: "Người dùng không tồn tại!"
+    destroy:
+      user_not_found: "Người dùng không tồn tại!"
+  followers:
+    index:
+      Followers: "Người theo dõi"
+    user_not_found: "Người dùng không tồn tại!"
+  followings:
+    index:
+      Following: "Đang theo dõi"
