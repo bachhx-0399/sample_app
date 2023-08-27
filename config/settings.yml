@@ -1,7 +1,10 @@
 digits:
   length_50: 50
+  length_140: 140
   length_255: 255
   length_6: 6
   length_30: 30
 email:
   regex: !ruby/regexp '/\A[\w+-.]+@[a-z\d-]+(.[a-z\d-]+)*.[a-z]+\z/i'
+model:
+  image_type: <%= %w(image/jpeg image/gif image/png) %>

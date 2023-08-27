@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
     return if logged_in?
 
     store_location
-    flash[:danger] = "Please log in."
+    flash[:danger] = t ".flash_logged_in_user_danger"
     redirect_to login_url, status: :see_other
   end
 end
