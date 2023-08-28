@@ -3,6 +3,7 @@ class Micropost < ApplicationRecord
   has_one_attached :image
 
   scope :recent_posts, ->{order(created_at: :desc)}
+  scope :by_user_ids, ->(user_ids){where user_id: user_ids}
 
   validates :content, presence: true,
             length: {maximum: Settings.digits.length_140}
@@ -14,6 +15,6 @@ class Micropost < ApplicationRecord
   delegate :name, to: :user, prefix: true, allow_nil: true
 
   def display_image
-    image.variant resize_to_limit: [500, 500]
+    image.variant resize_to_limit: Settings.model.image_size_limit
   end
 end

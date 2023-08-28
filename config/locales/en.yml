@@ -96,6 +96,13 @@ en:
       delete: "delete"
     show:
       Microposts: "Microposts"
+    unfollow:
+      Follow: "Follow"
+    follow:
+      Unfollow: "Unfollow"
+    show_follow:
+      view_my_profile: "view my profile"
+      Microposts: "Microposts"
   shared:
     error_messages:
       error_total: The form contains
@@ -106,6 +113,9 @@ en:
     user_info:
       micropost: "micropost"
       view_my_profile: "view my profile"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       login: "Log in"
@@ -181,3 +191,15 @@ en:
   size_message: "should be less than 5MB"
   application:
     flash_logged_in_user_danger: "Please log in."
+  relationships:
+    create:
+      user_not_found: "User not found!"
+    destroy:
+      user_not_found: "User not found!"
+  followers:
+    index:
+      Followers: "Followers"
+    user_not_found: "User not found!"
+  followings:
+    index:
+      Following: "Following"
